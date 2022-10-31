@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a svg{
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10;
+
+}
+body{
+    background-image: linear-gradient(to right , rgb(192, 0, 192) , blue);
+
+}
+h1{
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 720px;
+    height: 400px;
+}
+.slider{
+    width: 720px;
+    height:400px;
+    overflow: hidden;
+    position: absolute;
+    top: 80px;
+    left: 335px;
+
+}
+.slider .slides{
+    display: block;
+    width: 6000px;
+    height: 400;
+}
+.slider .slide{
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+.def{
+    position: absolute;
+    top: 500px;
+    color:white;
+}
+.def p{
+    font-size: 20px;
+}
+.def h2{
+    font-size: 35px;
+}
+.comp{
+    position: absolute;
+    color:white;
+    top: 600px;
+    left: 375px;
+}
+.woman{
+    color: white;
+    position: absolute;
+    top:650px ;
+    background: rgb(192, 0, 192) ;
+    width: 50%;
+    height: 300px;
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 5px;
+    height: 900px;
+}
+.woman h3{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+.wslider img{
+    width: 500px;
+    height: 250px;
+}
+.wslider{
+    width: 500px;
+    height:250px;
+    overflow: hidden;
+    /* position: absolute;
+    top: 80px;
+    left: 335px; */
+
+}
+.wslider .wslides{
+    display: block;
+    width: 2000px;
+    height: 250;
+}
+.wslider .wslide{
+    float: left;
+    list-style-type: none;
+    width: 500px;
+    height: 250px;
+}
+
+.men{
+    color: white;
+    position: absolute;
+    top:650px ;
+    left: 50%;
+    background: blue ;
+    width: 50%;
+    height: 300px;
+    border: 1px solid white;
+    padding: 5px;
+    height: 900px;
+    font-size: 20px;
+
+}
+.men h3{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.mslider img{
+    width: 500px;
+    height: 250px;
+}
+.mslider{
+    width: 500px;
+    height:250px;
+    overflow: hidden;
+    /* position: absolute;
+    top: 80px;
+    left: 335px; */
+
+}
+.mslider .mslides{
+    display: block;
+    width: 2000px;
+    height: 250;
+}
+.mslider .mslide{
+    float: left;
+    list-style-type: none;
+    width: 500px;
+    height: 250px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>definition</title>
+    <link rel="stylesheet" href="definition.css">
+</head>
+<body>
+    <h1>Gender Discrimination Definintion</h1>
+    <a href="main.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg></a>
+    <div class="slider">
+        <ul class="slides">
+            <li class="slide"><img src="gender-dis-pic/definition-pic1.jpg" alt=""></li>
+            <li class="slide"><img src="gender-dis-pic/definition-pic2.jpg" alt=""></li>
+            <li class="slide"><img src="gender-dis-pic/definition-pic3.jpg" alt=""></li>
+            <li class="slide"><img src="gender-dis-pic/definition-pic4.jpg" alt=""></li>
+            <li class="slide"><img src="gender-dis-pic/definition-pic5.jpg" alt=""></li>
+            <li class="slide"><img src="gender-dis-pic/definition-pic1.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div class="def">
+    <h2>Definintion</h2>
+    <p class="definp">Gender inequality is the social phenomenon in which men and women are not treated equally. The treatment may arise from distinctions regarding biology, psychology, or cultural norms prevalent in the society. Some of these distinctions are empirically grounded, while others appear to be social constructs</p>
+    </div>
+
+    <h2 class="comp">Gender Discrimination Between Against</h2>
+    <div class="woman">
+        <h3>women</h3>
+        <div class="wslider">
+            <ul class="wslides">
+                <li class="wslide"><img src="gender-dis-pic/definition-woman1.jpg" alt=""></li>
+                <li class="wslide"><img src="gender-dis-pic/definition-woman2.jpg" alt=""></li>
+                <li class="wslide"><img src="gender-dis-pic/definition woman3.jpg" alt=""></li>
+                <li class="wslide"><img src="gender-dis-pic/definition-woman1.jpg" alt=""></li>
+            </ul>
+        </div><br>
+        <p>1-In some undeveloped countries women don't have a marraige choice</p><br>     
+        <p>2-In some undeveloped countries women get piad less than men working in the same field</p><br>
+        <p>3-In some undeveloped countries women are not allowed to work</p><br>
+        <p>4-In some undeveloped countries women are not allowed to leave the house</p><br>
+        <p>5-In some middle eastern countries women are treated like slaves who should obey there husband</p><br>
+        <p>6-In some places women can't walk freely for the fear of getting sexually harrassed or even raped</p><br>
+        <p>7-In some undeveloped countries women are forced to lay as much children as they and then they are forced to raise them alone</p><br>
+        <p>8-In some muslim countries women are forced to wear hijab, cover their whole bodies, and sometimes tocover their face </p><br>
+        <p>9-In some undeveloped countries women are exposed to child marrage,teeanage pregnancy,chld domestic work, poor edcation and health, sexual abuse, exploitation and violence</p>
+    </div>
+
+    
+    <div class="men">
+        <h3>Men</h3>
+        <div class="mslider">
+            <ul class="mslides">
+                <li class="mslide"><img src="gender-dis-pic/men1.jpg" alt=""></li>
+                <li class="mslide"><img src="gender-dis-pic/men2.jpg" alt=""></li>
+                <li class="mslide"><img src="gender-dis-pic/men3.jpg" alt=""></li>
+                <li class="mslide"><img src="gender-dis-pic/men1.jpg" alt=""></li>
+            </ul>
+        </div>
+        <p>1-Men have less opportunities in working in supporting jobs than women such as: secretary,nurse...</p><br>
+        <p>2-Men are expected to afford all the basic needs such as:house,food,...</p><br>
+        <p>3-Men life's can be destroyed if a woman claimed that they assualted her</p><br>
+        <p>4-Men can't ask for help against sexaul harrassment and rape</p><br>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            var $slider =$('.slider');
+            var $slidecont = $slider.find('.slides')
+            var $slides = $slidecont.find('.slide')
+            var currentslide = 1;
+            setInterval(function(){
+                $slidecont.animate({'margin-left': '-=720px'} ,1200, function(){
+                    currentslide++;
+                    if(currentslide == $slides.length){
+                        currentslide =1;
+                        $slidecont.css('margin-left',0)
+                    }
+                })
+            },3000);
+
+            var $wslider =$('.wslider');
+            var $wslidecont = $wslider.find('.wslides')
+            var $wslides = $wslidecont.find('.wslide')
+            var wcurrentslide = 1;
+            setInterval(function(){
+                $wslidecont.animate({'margin-left': '-=500px'} ,1000, function(){
+                    wcurrentslide++;
+                    if(wcurrentslide == $wslides.length){
+                        wcurrentslide =1;
+                        $wslidecont.css('margin-left',0)
+                    }
+                })
+            },3000);
+            var $mslider =$('.mslider');
+            var $mslidecont = $mslider.find('.mslides')
+            var $mslides = $mslidecont.find('.mslide')
+            var mcurrentslide = 1;
+            setInterval(function(){
+                $mslidecont.animate({'margin-left': '-=500px'} ,1000, function(){
+                    mcurrentslide++;
+                    if(mcurrentslide == $mslides.length){
+                        mcurrentslide =1;
+                        $mslidecont.css('margin-left',0)
+                    }
+                })
+            },3000);
+
+        })
+    </script>
+</body>
+</html>

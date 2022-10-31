@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+body{
+    background-image: linear-gradient(to right,blue, rgb(192, 0, 192));
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+a svg{
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+ 
+}
+
+img{
+    width: 450px;
+}
+.div1{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: fadein 2s linear forwards;
+}
+.p1{
+    opacity: 0;
+    
+    animation: fadein 4s linear forwards;
+}
+
+.div2{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: fadein 2s linear forwards;
+}
+.p2{
+    opacity: 0;
+    animation: fadein 4s linear forwards;
+}
+.div3{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: fadein 2s linear forwards; 
+}
+.p3{
+    opacity: 0;
+    animation: fadein 4s linear forwards;
+}
+
+@keyframes fadein{
+    to {
+         opacity: 1;
+     }
+ }
